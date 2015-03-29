@@ -8,7 +8,7 @@ import pyperclip
 http = httplib2.Http()
 
 status, response = http.request('http://la-coaching-academy.de', "GET")
-response = response.decode('iso-8859-1')
+# response = response.decode('iso-8859-1')
 soup = BeautifulSoup(response)
 
 for div in soup.select('div#col3_content'):
